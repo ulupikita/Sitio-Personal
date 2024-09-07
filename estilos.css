@@ -1,0 +1,513 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #FFFFFF;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* Estilos específicos para index.html */
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left-section {
+    width: 50%;
+    position: relative;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.right-section {
+    width: 90%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A1A1A;
+    position: relative;
+    height: 100%;
+}
+
+.logo-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-color: #9400D3;
+    z-index: 1;
+}
+
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 400px;
+    z-index: 2;
+}
+
+.info {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.buttons {
+    margin-top: 100px;
+}
+
+.buttons a {
+    background-color: #9400D3;
+    color: #FFFFFF;
+    font-size: 1.5em;
+    padding: 10px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+.buttons a:hover {
+    background-color: #FF1493;
+    transform: scale(1.05);
+}
+
+.right-section {
+    box-shadow: 0px 0px 15px #9400D3;
+    border-radius: 10px;
+}
+
+/* Estilos específicos para gustos.html */
+.gustos-page {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+
+.gustos-page .background {
+    position: absolute;
+    background-image: url('imagen/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gustos-page .background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.gustos-page .buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+    margin-top: 100px;
+}
+
+
+.gustos-page .button {
+    background-color: #d81515;
+    color: #000000;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+.gustos-page .button:hover {
+    background-color: #ffffff;
+    transform: scale(1.1);
+}
+
+/* Estilos específicos para la sección Gustos Musicales */
+.gustos-musicales {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    color: #FFFFFF;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.gustos-musicales .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.gustos-musicales .artist-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.gustos-musicales .text-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+}
+
+.gustos-musicales h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #d81515;
+}
+
+.gustos-musicales p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #FFFFFF;
+}
+
+/* Estilos específicos para la sección Gustos culturales */
+.gustos-culturales {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    color: #FFFFFF;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.gustos-culturales .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.gustos-culturales .artist-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.gustos-culturales .text-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+}
+
+.gustos-culturales h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #d81515;
+}
+
+.gustos-culturales p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #FFFFFF;
+}
+
+/* Estilos específicos para la sección hobbies */
+.hobbies {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    color: #FFFFFF;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.hobbies .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hobbies .artist-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hobbies .text-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+}
+
+.hobbies h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #d81515;
+}
+
+.hobbies p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #FFFFFF;
+}
+
+/* Estilos específicos para informacion */
+
+.informacion {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+
+.informacion .background {
+    position: absolute;
+    background-image: url('imagen/jardin.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacion .background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.informacion .buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+    margin-top: 100px;
+    align-items: center;
+}
+
+
+.informacion .button {
+    background-color: #18009e;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+    width: 200px;
+    text-align: center;
+}
+
+.informacion .button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+/* Estilos específicos para la sección familia */
+.familia {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    color: #FFFFFF;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.familia .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.familia .artist-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.familia .text-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+}
+
+.familia h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1e00c5;
+}
+
+.familia p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #FFFFFF;
+}
+
+.familia ul {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #FFFFFF;
+    list-style-position: inside;
+    text-indent: 2em;
+}
+
+/* Estilos específicos para la sección familia */
+.mascotas {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    color: #FFFFFF;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.mascotas .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.mascotas .artist-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.mascotas .text-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+}
+
+.mascotas h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1e00c5;
+}
+
+.mascotas p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #FFFFFF;
+}
+
+.mascotas ul {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #FFFFFF;
+    list-style-position: inside;
+    text-indent: 2em;
+}
+
+/* Estilos específicos para la sección amigos */
+.amigos {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    color: #FFFFFF;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.amigos .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.amigos .artist-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.amigos .text-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+}
+
+.amigos h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1e00c5; 
+}
+
+.amigos p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #FFFFFF;
+}
+
+
+
+
